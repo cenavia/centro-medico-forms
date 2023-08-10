@@ -1,13 +1,17 @@
-import { useState } from 'react';
 
 export const Formulario = () => {
     
-    const [nombreMascota, setNombreMascota] = useState('');
+    // sendData va a simular ser solo una función que hace algo con la data
+    const sendData = (nombreMascota) => {
+        console.log(nombreMascota)
+      }
 
     const handleSubmit = (e) => {
+    // Vamos a capturar el evento y vamos a prevenir que siga el comportamiento
         e.preventDefault();
-
-        console.log(nombreMascota);
+    // Desde el evento que capturamos("e"), podemos acceder a los valores de los
+	// inputs con los nombres que definimos ()
+        sendData(e.target.nombreMascota.value)
     } 
     
     return (
@@ -29,12 +33,13 @@ export const Formulario = () => {
                         Nombre Mascota
                     </label>
                     <input
-                        id="mascota"
+                        id="nombreMascota"
                         type="text"
                         placeholder="Nombre de la Mascota"
                         className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
-                        value={nombreMascota}
-                        onChange={ (e) => setNombreMascota(e.target.value) }
+                        name="nombreMascota"
+                       // value={nombre}  se elimian esta propiedad
+                       // onChange={ (e) => setNombre(e.target.value) } se elimian esta propiedad
                     />  
                 </div>
                 <input
