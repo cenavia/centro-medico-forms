@@ -11,6 +11,13 @@ export const Formulario = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
+        // 4-RETO Validacion de datos cuando los campos o un campo esta vacio - Tarea.
+
+        if( [ nombreMascota, propietario, email, fecha, sintomas ].includes('') ) {
+            console.log('Hay Al Menos un campo vacio')
+            return;
+        } 
+
          // 1 - Objeto de Paciente
          const objetoPaciente = {
             nombreMascota, 
@@ -20,7 +27,6 @@ export const Formulario = () => {
             sintomas
         }
         
-        // 4-RETO Validacion de datos cuando los campos o un campo esta vacio - Tarea.
 
         
         // 3-mostramos en consola los datos
