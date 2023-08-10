@@ -11,6 +11,18 @@ export const Formulario = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
+         // 1 - Objeto de Paciente
+
+        
+        // 4-reto Validacion de datos cuando los campos o un campo esta vacio - Tarea.
+
+        
+        // 3-mostramos en consola los datos
+        console.log("Aqui va el objeto del registro");
+
+        // 5-Reiniciar el form
+
+
 
     } 
     
