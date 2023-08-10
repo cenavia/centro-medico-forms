@@ -11,6 +11,28 @@ export const Formulario = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
+         // 1 - Objeto de Paciente
+         const objetoPaciente = {
+            nombreMascota, 
+            propietario, 
+            email, 
+            fecha, 
+            sintomas
+        }
+        
+        // 4-RETO Validacion de datos cuando los campos o un campo esta vacio - Tarea.
+
+        
+        // 3-mostramos en consola los datos
+        console.log(objetoPaciente);
+
+        // 5-Reiniciar el form
+        setNombreMascota('')
+        setPropietario('')
+        setEmail('')
+        setFecha('')
+        setSintomas('')
+
 
     } 
     
