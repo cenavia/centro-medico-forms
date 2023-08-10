@@ -5,7 +5,6 @@ export const Formulario = () => {
 	// Inicializamos nuestra referencia usando el Hook useRef
     const form = useRef(null)
 
-
       // sendData se mantendrá como nuestra función que simula mandar data
     const sendData = (nombreMascota) => {
         console.log(nombreMascota)
@@ -30,7 +29,7 @@ export const Formulario = () => {
         sendData(
             registroPaciente.nombreMascota
         )
-        // limpiar campos
+        // limpiar campos RETO
 
     } 
     
