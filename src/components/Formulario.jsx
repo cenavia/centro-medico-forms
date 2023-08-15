@@ -12,17 +12,27 @@ export const Formulario = () => {
         e.preventDefault();
 
          // 1 - Objeto de Paciente
-
-        
+            const dataPaciente = {
+                nombreMascota,
+                propietario,
+                email,
+                sintomas
+            }
         // 4-reto Validacion de datos cuando los campos o un campo esta vacio - Tarea.
-
+            // usando javascrip
+            // en una sola linea
+            // usar arrayMethods
+            // si un solo campo queda vacio no generar el registro.
         
         // 3-mostramos en consola los datos
-        console.log("Aqui va el objeto del registro");
+        console.log(dataPaciente);
 
         // 5-Reiniciar el form
-
-
+        setNombreMascota('')
+        setPropietario('')
+        setEmail('')
+        setFecha('')
+        setSintomas('')
 
     } 
     
