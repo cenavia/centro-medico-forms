@@ -20,14 +20,11 @@ export const Formulario = () => {
 
         // Creamos un objeto que va a guardar los valores
 		// Que a su vez obtenemos mediante el FormData
-        const registroPaciente = {
-            'nombreMascota' : formData.get('nombreMascota'),
-            
-        }
+        const registroPaciente = Object.fromEntries(formData)
 
         // Aquí es donde simulamos mandar nuestra data
         sendData(
-            registroPaciente.nombreMascota
+            registroPaciente
         )
         // limpiar campos RETO
 
